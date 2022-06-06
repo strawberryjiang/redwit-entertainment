@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.redwit.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.redwit.entity.Book">
+        <id column="id" property="id"/>
+        <result column="book_cn_name" property="bookCnName"/>
+        <result column="book_origin_name" property="bookOriginName"/>
+        <result column="author_cn_name" property="authorCnName"/>
+        <result column="author_origin_name" property="authorOriginName"/>
+        <result column="country" property="country"/>
+        <result column="language" property="bookLanguage"/>
+        <result column="category" property="category"/>
+        <result column="type" property="bookType"/>
+        <result column="publishing_house" property="publishingHouse"/>
+        <result column="isbn" property="isbn"/>
+        <result column="publishing_time" property="publishingTime"/>
+        <result column="page_size" property="pageSize"/>
+        <result column="text_size" property="textSize"/>
+        <result column="price" property="price"/>
+        <result column="purchase_price" property="purchasePrice"/>
+        <result column="is_purchase" property="isPurchase"/>
+        <result column="is_read" property="isRead"/>
+        <result column="create_time" property="createTime"/>
+        <result column="last_update_time" property="lastUpdateTime"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        , book_cn_name, book_origin_name, author_cn_name, author_origin_name, country, book_language, category,
+        book_type, publishing_house, isbn, publishing_time, page_size, text_size, price, purchase_price, is_purchase, is_read, create_time, last_update_time
+    </sql>
+
+</mapper>

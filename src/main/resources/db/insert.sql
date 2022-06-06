@@ -1,0 +1,2 @@
+INSERT INTO book (book_cn_name,book_origin_name,author_cn_name,author_origin_name,country,book_language,category,book_type,publishing_house,isbn,publishing_time,page_size,text_size,price,purchase_price,is_purchase,is_read,create_time,last_update_time) VALUES
+	 (provinceCode,'accessId',1,'com.xsy.mediation.component.strategy.process.conciliation.apply.WSTjApplyDocRequestStrategy','remarkValue申请出具调解书'),
