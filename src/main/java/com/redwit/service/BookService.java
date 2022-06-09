@@ -5,6 +5,7 @@ import com.redwit.dto.BookDTO;
 import com.redwit.entity.Book;
 import com.redwit.vo.BookVO;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -25,4 +26,6 @@ public interface BookService extends IService<Book> {
     List<BookVO> listBooks(BookDTO book);
 
     int addBook(BookDTO book);
+
+    void importFile(BookDTO bookDTO) throws IOException, IllegalAccessException;
 }

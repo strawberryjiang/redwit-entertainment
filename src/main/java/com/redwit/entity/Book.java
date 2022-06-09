@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -77,42 +76,42 @@ public class Book implements Serializable {
     /**
      * ISBN
      */
-    private Integer isbn;
+    private String isbn;
 
     /**
      * 出版时间
      */
-    private Date publishingTime;
+    private String publishingTime;
 
     /**
      * 页数
      */
-    private Integer pageSize;
+    private String pageSize;
 
     /**
      * 字数
      */
-    private Integer textSize;
+    private String textSize;
 
     /**
      * 售价
      */
-    private BigDecimal price;
+    private String price;
 
     /**
      * 实际购买价格
      */
-    private BigDecimal purchasePrice;
+    private String purchasePrice;
 
     /**
      * 是否已经购买
      */
-    private boolean isPurchase;
+    private String isPurchase;
 
     /**
      * 是否已经看完
      */
-    private boolean isRead;
+    private String isRead;
 
     /**
      * 创建时间
