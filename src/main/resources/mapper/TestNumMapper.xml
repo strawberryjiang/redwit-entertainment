@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.redwit.mapper.TestNumMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.redwit.entity.TestNum">
+        <id column="id" property="id" />
+        <result column="court_code" property="courtCode" />
+        <result column="online_mediation_count" property="onlineMediationCount" />
+        <result column="before_case_mediation_count" property="beforeCaseMediationCount" />
+        <result column="in_case_mediation_count" property="inCaseMediationCount" />
+        <result column="detail_mediation_count" property="detailMediationCount" />
+        <result column="skip_mediation_court_count" property="skipMediationCourtCount" />
+        <result column="success_total" property="successTotal" />
+        <result column="skip_id" property="skipId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, court_code, online_mediation_count, before_case_mediation_count, in_case_mediation_count, detail_mediation_count, skip_mediation_court_count, success_total, skip_id
+    </sql>
+
+</mapper>
